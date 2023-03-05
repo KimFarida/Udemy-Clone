@@ -3,188 +3,308 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awsome -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
     <title>Udemy</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <header>
-        <h1 id="nav-title">Udemy</h1>
-        <nav class="headernav">
-            <ul>
-                <li><a href="#">Categories</a></li>
-                <li>
-                    <form class="nosubmit">
-                        <input type="search" placeholder="Search for anything">
-                    </form>
-                </li>
-                <li><a href="#">Udemy Business</a></li>
-                <li><a href="#">Teach on Udemy</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><button class="w-btn"><a href="#">Log in</a></button></li>
-                <li><button class="e-btn"><a href="#">Sign Up</a></button></li>
-                <li><a href="#">Browse</a></li>
-
-            </ul>
-        </nav>
+        <div class="desktop-header">
+            <div>
+                <img src="./assets/img/udemy-logo.svg" class="logo" alt="Udemy" />
+            </div>
+            <div class="categories--block">
+                <p class="cat-title">Categories</p>
+                <form class="cat-form">
+                    <input class="header-search" type="text" placeholder="Search for anything" />
+                </form>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Udemy Business</a></li>
+                    <li><a href="#">Teach on Udemy</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button class="cart-button"><a href="#"><i class='bx bx-cart-alt'></i></a></button>
+                <button class="w-btn"><a href="#">Log in</a></button>
+                <button class="b-btn"><a href="#">Sign Up</a></button>
+                <button class="w-btn"><a href="#"><i class='bx bx-globe' ></i></a></button>
+            </div>
+        </div>
     </header>
+    <div class="mobile-header">
+        <div>
+            <button class="cart-button"><a href="#"><i class='bx bx-menu' ></i></a></button>
+        </div>
+        <div>
+            <img src="./assets/img/udemy-logo.svg" class="mobile-logo" alt="Udemy" />
+        </div>
+        <div class="mobile-header-buttons">
+            <button class="cart-button"><a href="#"><i class='bx bx-search' ></i></a></button>
+            <button class="cart-button"><a href="#"><i class='bx bx-cart-alt'></i></a></button>
+        </div>
+    </div>
     <!-- End of Navbar -->
 
     <!-- Main -->
-        <!-- Bannner Section -->
-        <section class="banner">
-            <div>
-                <h1></h1>
-            </div>
-        
-        </section>
-        <!-- End of Banner Section -->
+    <!-- Bannner Section -->
+    <section>
+        <div class="hero">
+            <h1></h1>
+        </div>
+    
+    </section>
+    <!-- End of Banner Section -->
 
     <section>
-        <div class=section2>
-            <div class="container">
-                <span style="font-size:30px;">
-                    <h3>A broad selection of courses</h3>
-                </span>
-                <br><br>
-                
-                <span style="font-size:20px;  ">
-                    <p>Choose from 213,000 online video courses with new additions published every month</p>
-                </span>
-                <br>
-                
-                
-                <nav class="nav-sec">
-                    <ul>
-                        <li><a href="#">Python&nbsp</a></li>
-                        <li><a href="#">Excel&nbsp</a></li>
-                        <li><a href="#">Web Development&nbsp</a></li>
-                        <li><a href="#">JavaScript&nbsp</a></li>
-                        <li><a href="#">Data Science&nbsp</a></li>
-                        <li><a href="#">AWS Certification&nbsp</a></li>
-                        <li><a href="#">Drawing&nbsp</a></li>
-                    </ul>
-                </nav>
-                <div class=courses-container>
-                    <div class=cc-text >
-                        <h2>Expand your career opportunities with Python</h2>
-                        <br>
-                        <p>Take one of Udemy's range of Python courses and learn how to code using the incredibly useful language.
-                        Its simple syntax and readability makes Python perfect for Flask, Django, data science and machine learning.
-                        You'll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...
-                        </p>
-                        <br>
-                        <button class="py-btn"> <a href="#"><h4>Explore Python</h4></a></button>
-                    </div>
-
-                    <div class="parent">
-                        <div class="head" style="background-color:purple;margin-left:0%;"></div>
-                        <div class="main" style="background-color:black; margin-left:15px;"></div>
-                        <div class="" style="background-color:purple; margin-left:15px;"></div>
-                        <div class="" style="background-color:black; margin-left:15px;"></div>
-                        <div class="footer" style="background-color:purple;margin-left:15px;"></div>
-                        
-                    </div>
-
-                    <div class="parent-text">
-                        <div class="head" style="background-color: white; margin-left:0%;">Header</div>
-                        <div class="main" style="background-color:white; margin-left:15px;">Main</div>
-                        <div class="" style="background-color: white; margin-left:15px;">SideBar</div>
-                        <div class="" style="background-color: white; margin-left:15px;">Extra</div>
-                        <div class="footer" style="background-color: white; margin-left:15px;">Footer</div>
-                    </div>
-
+        <div class="course-selection">
+            <h2 class="course-selection-title">A broad selection of courses</h2>
+            <p class="course-selection-desc">Choose from 213,000 online video courses with new additions published every month</p>
+            <nav class="course-nav">
+                <ul>
+                    <li><a href="#">Python&nbsp</a></li>
+                    <li><a href="#">Excel&nbsp</a></li>
+                    <li><a href="#">Web Development&nbsp</a></li>
+                    <li><a href="#">JavaScript&nbsp</a></li>
+                    <li><a href="#">Data Science&nbsp</a></li>
+                    <li><a href="#">AWS Certification&nbsp</a></li>
+                    <li><a href="#">Drawing&nbsp</a></li>
+                </ul>
+            </nav>
+            <div class="courses-container">
+                <div class="cc-text">
+                    <h2>Expand your career opportunities with Python</h2>
+                    <p>Take one of Udemy's range of Python courses and learn how to code using the incredibly useful language.
+                    Its simple syntax and readability makes Python perfect for Flask, Django, data science and machine learning.
+                    You'll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...
+                    </p>
+                    <button class="w-btn"><a href="#">Explore Python</a></button>
                 </div>
-                
-            </div>
-            
+                <div class="course-slide">
+                    <div class="course-card">
+                        <div>
+                            <img class="course-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
+                        </div>
+                        <div>
+                            <h3>
+                                Learn Python: The Complete Python Programming Course
+                            </h3>
+                            <p>
+                                Avinash Jain, The Codex
+                            </p>
+                            <h3>
+                               ₦5,500
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div>
+                            <img class="course-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
+                        </div>
+                        <div>
+                            <h3>
+                                Learn Python: The Complete Python Programming Course
+                            </h3>
+                            <p>
+                                Avinash Jain, The Codex
+                            </p>
+                            <h3>
+                               ₦5,500
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div>
+                            <img class="course-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
+                        </div>
+                        <div>
+                            <h3>
+                                Learn Python: The Complete Python Programming Course
+                            </h3>
+                            <p>
+                                Avinash Jain, The Codex
+                            </p>
+                            <h3>
+                               ₦5,500
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div>
+                            <img class="course-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
+                        </div>
+                        <div>
+                            <h3>
+                                Learn Python: The Complete Python Programming Course
+                            </h3>
+                            <p>
+                                Avinash Jain, The Codex
+                            </p>
+                            <h3>
+                               ₦5,500
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div>
+                            <img class="course-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
+                        </div>
+                        <div>
+                            <h3>
+                                Learn Python: The Complete Python Programming Course
+                            </h3>
+                            <p>
+                                Avinash Jain, The Codex
+                            </p>
+                            <h3>
+                               ₦5,500
+                            </h3>
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
 
-<section>
-    <div class="stdf-container">
+    <div class="testimonial-section">
         <div class="stdf-header">
             <h2>How learners like you are achieving their goals</h2>
-        </div>    
-        <div class="parent3-container">
-            <div class="parent3">
-                <div class="head" style="background-color: white; margin-left:0%;">
-                    <div class="stdf-headcontent">
-                        <p>
-                            I am proud to say that after a few months of taking this course...
-                            <b>I passed my exam and am now an AWS Certified Cloud Practitioner!</b>
-                             This content was exactly what the CCP exam covered.
-                        </p>
-                        
-                        <div style="margin-top: 50px;">
-                            <hr>
-                            <br>
-                            <a href="#"><p>[NEW] Ultimate AWS Certified Cloud
-                                Practitioner- 2022
-                            </p></a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main" style="background-color: white; margin-left:15px;">
-                    <div class="stdf-headcontent">
-                        <p>
-                            I am proud to say that after a few months of taking this course...
-                            <b>I passed my exam and am now an AWS Certified Cloud Practitioner!</b>
-                             This content was exactly what the CCP exam covered.
-                        </p>
-                        
-                        <div style="margin-top: 50px;">
-                            <hr>
-                            <br>
-                            <a href="#"><p>[NEW] Ultimate AWS Certified Cloud
-                                Practitioner- 2022
-                            </p></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="" style="background-color: white; margin-left:15px;">
-                    <div class="stdf-headcontent">
-                        <p>
-                            I am proud to say that after a few months of taking this course...
-                            <b>I passed my exam and am now an AWS Certified Cloud Practitioner!</b>
-                             This content was exactly what the CCP exam covered.
-                        </p>
-                        
-                        <div style="margin-top: 50px;">
-                            <hr>
-                            <br>
-                            <a href="#"><p>[NEW] Ultimate AWS Certified Cloud
-                                Practitioner- 2022
-                            </p></a>
-                        </div>
-
-                    </div>
-                </div>
-             </div>
         </div>
+        <div class="testimonial-wrapper">
+            <div class="testimonial">
+                <p>
+                    I am proud to say that after a few months of taking this course...I passed my exam and am now an AWS Certified Cloud Practitioner! This content was exactly what the CCP exam covered.
+                </p>
+                <h4>Will A</h4>
+                <div>
+                    <hr>
+                    <h3>
+                        [NEW] Ultimate AWS Certified Cloud Practitioner- 2022
+                    </h3>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>
+                    This course helped me freshen up on my product manager skills and land a job at Facebook! Thanks guys :)
+                </p>
+                <h4>Ron F</h4>
+                <div>
+                    <hr>
+                    <h3>
+                        [NEW] Ultimate AWS Certified Cloud Practitioner- 2022
+                    </h3>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>
+                    One of the best courses on management and leadership I have come across so far. The advice is practical, and examples highly relatable. Would help anyone become a better manager.
+                </p>
+                <h4>Will A</h4>
+                <div>
+                    <hr>
+                    <h3>
+                        [NEW] Ultimate AWS Certified Cloud Practitioner- 2022
+                    </h3>
+                </div>
+            </div>
+        </div>    
     </div>
-</section>
 
 <div class="viewcat-container">
 
     <h2>Students are Viewing</h2>
-    <div style="padding-top: 20px; padding-bottom: 100px;">
-        <div class="parent2" >
-            <div class="head" style="background-color: purple; margin-left: 0%  ;">Header</div>
-            <div class="main" style="background-color:black; margin-left: 15px;">Main</div>
-            <div class="" style="background-color:#800080; margin-left: 15px;">SideBar</div>
-            <div class="" style="background-color:black; margin-left: 15px;">Extra</div>
-            <div class="footer" style="background-color:purple; margin-left: 15px;">Footer</div>
+    <div class="course-slide">
+        <div class="course-card">
+            <div>
+                <img class="course-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
+            </div>
+            <div>
+                <h3>
+                    Learn Python: The Complete Python Programming Course
+                </h3>
+                <p>
+                    Avinash Jain, The Codex
+                </p>
+                <h3>
+                   ₦5,500
+                </h3>
+            </div>
         </div>
-
-        <div class="parent2" >
-            <div class="head" style="background-color: white; margin-left: 0%  ;">Header</div>
-            <div class="" style="background-color:white; margin-left: 15px;">Main</div>
-            <div class="" style="background-color: white; margin-left: 15px;">SideBar</div>
-            <div class="" style="background-color:white; margin-left: 15px;">Extra</div>
-            <div class="footer" style="background-color: white; margin-left:15px;">Footer</div>
+        <div class="course-card">
+            <div>
+                <img class="course-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
+            </div>
+            <div>
+                <h3>
+                    Learn Python: The Complete Python Programming Course
+                </h3>
+                <p>
+                    Avinash Jain, The Codex
+                </p>
+                <h3>
+                   ₦5,500
+                </h3>
+            </div>
+        </div>
+        <div class="course-card">
+            <div>
+                <img class="course-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
+            </div>
+            <div>
+                <h3>
+                    Learn Python: The Complete Python Programming Course
+                </h3>
+                <p>
+                    Avinash Jain, The Codex
+                </p>
+                <h3>
+                   ₦5,500
+                </h3>
+            </div>
+        </div>
+        <div class="course-card">
+            <div>
+                <img class="course-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
+            </div>
+            <div>
+                <h3>
+                    Learn Python: The Complete Python Programming Course
+                </h3>
+                <p>
+                    Avinash Jain, The Codex
+                </p>
+                <h3>
+                   ₦5,500
+                </h3>
+            </div>
+        </div>
+        <div class="course-card">
+            <div>
+                <img class="course-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
+            </div>
+            <div>
+                <h3>
+                    Learn Python: The Complete Python Programming Course
+                </h3>
+                <p>
+                    Avinash Jain, The Codex
+                </p>
+                <h3>
+                   ₦5,500
+                </h3>
+            </div>
         </div>
     </div>
 
@@ -240,7 +360,7 @@
                         <p>8,415,615 suscribers</p>
                     </li>
                     <li>
-                        <button class="cat-btn"><a href="#"><h4>Explore more topics</h4></a></button>
+                        <button class="w-btn"><a href="#"><h4>Explore more topics</h4></a></button>
                     </li>
                 </ul>
     

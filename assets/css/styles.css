@@ -2,32 +2,139 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica;
+    font-family: Inter, sans-serif;
     box-sizing: border-box;
 }
 
+
 /* Header */
-header {
+.desktop-header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px 50px;
     box-shadow: 0 1px 8px #ddd;
+    width: 100%;
+}
+
+.mobile-header {
+    display: none;
 }
 
 header a {
     text-decoration: none;
-    color: #555;
-    transition: all 0.3s ease 0s;
+    color: inherit;
 }
 
-header a:hover {
-    color: #696969;
-} 
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.mobile-logo {
+    width: 100px;
+    height: auto;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 250px;
+}
+
+.mobile-header-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header, .desktop-header {
+        display: none;
+        padding: 20px 10px;
+    }
+
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        box-shadow: 0 1px 8px #ddd;
+        width: 100%;
+    }
+       
+}
+
+button {
+    padding: 0 12px;
+    height: 3rem;
+    min-width: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.cart-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #000000;
+}
+
+.w-btn {
+    background: #ffffff;
+    color: #000000;
+}
+
+.b-btn {
+    background: #000000;
+    color: #ffffff !important;
+}
+
+.w-btn a, .b-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.categories--block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 600px;
+}
+
+.cat-form {
+    margin-right: 10px;
+}
+
+.header-search {
+    padding: 0 24px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    min-width: 500px;
+    min-height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    min-width: 300px;
+}
+
+section {
+    font-family: Inter, sans-serif;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding-block: 30px;
+}
 /* Need this later for footer */
 
 
-#nav-title {
+/* #nav-title {
     margin-right: auto;
     font-size: 1.5em;
 }
@@ -37,85 +144,162 @@ header nav li {
     list-style: none;
     display: inline-block;
     padding: 0 20px;
-}
+} */
 
 /* Use to make search bar round */
 /* border-radius: 12px; */
 
 /* Section Banner starts here */
-.banner {
+/* .banner {
     display: inline;
-    /* background-image: url(../images/banner.jpg);
+    background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; */
-}
-.banner div{
+    flex-direction: column;
+} */
+.hero {
     background-color: purple; 
-    height: 50%;
-    margin: 0 100px 30px;
+    min-height: 350px;
 }
 
 /* Section 2 stars here */
-.section2{
-    /* background-color:white; */
+/* .section2{
+    background-color:white;
     height: fit-content;
-    padding: 0 100px 30px;
-}
+} */
 
-.section2  a{
+/* .section2  a{
     text-decoration: none;
     color: #555;
     transition: all 0.3s ease 0s;
-}
+} */
 
 /* Courses Section Starts here */
-.section2 .container{
+/* .section2 .container{
     height: fit-content;
     margin: 0 30px; 
     padding-top: 20px;
     padding-bottom: 15px;
-}
+} */
 
-.section2 .container span{
+/* .section2 .container span{
     padding-bottom: 20px 0;
+} */
+
+.course-selection-title {
+    font-size: 2.5rem;
 }
 
+.course-selection-desc {
+    margin-top: 1rem;
+}
 
-.nav-sec{
+.course-nav{
+    margin-top: 1rem;
     display: flex;
     justify-content:flex-start;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom:10px;
 }
 
-.nav-sec li{
+.course-nav li {
     list-style: none;
     display: inline-block;
+}
+
+.course-nav a {
+    text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 0.9em;
+    color: #4d4d4d;
+}
+
+.course-nav>li:nth-child(0) {
+    color: #000000;
 }
 
 .courses-container{
-    border: solid;
-    border-width: thin;
-    padding-top: 30px;
+    border: 1px solid #cecece;
+    padding: 30px;
 }
 
-.cc-text{
-    height: fit-content; 
-    width: fit-content; 
-    margin-left: 30px; 
-    margin-right:420px; 
-    line-height: 25px;
-
+.cc-text{ 
+    max-width: 60%;
 }
 
-.py-btn {
+.cc-text p { 
+    margin-top: 2em;
+}
+
+.cc-text button { 
+    margin-top: 2em;
+}
+
+.course-slide {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    gap: 1em;
+}
+
+.course-img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.course-card p {
+    margin: 0.5em 0 0.5em 0;
+    font-size: small;
+}
+
+.testimonial-section {
+    margin: none;
+    background-color: #F7F9FA;
+    padding:50px;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.testimonial {
+    background-color: #ffffff;
+    border: 1px solid #cecece;
+    padding: 1em;
+    align-items: flex-start;
+    min-height: 15em;
+    max-width: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1em;
+}
+
+.testimonial div > h3 {
+    margin-top: 1em;
+    color: #5624d0;
+}
+
+.testimonial div > hr {
+    border: 0.05em solid #cecece;
+}
+
+/* .py-btn {
     background-color: white;
     color: black;
     width: fit-content;
@@ -127,7 +311,7 @@ header nav li {
   .py-btn:hover {
     background-color: gray; 
     color: white;
-  }
+  } */
 
 /* Section 2 Ends here */
 
@@ -162,10 +346,6 @@ header nav li {
     text-decoration: none;
     font-weight: 700;
 }
-
-
-
-
 
 
 /* Grid Layout Template*/
@@ -362,7 +542,7 @@ header nav li {
 
 } */
 
-.b-btn {
+/* .b-btn {
     background-color: black;
     text-decoration: none;
     color: white;
@@ -372,13 +552,13 @@ header nav li {
     padding: 5px 10px;
     border: 1px solid black; 
     transition-duration: 0.4s;
-  }
+  } */
 
   /* .b-btn:hover {
     background-color: gray; 
     color: white;
   } */
-
+/* 
   .w-btn {
     background-color: white;
     color: black;
@@ -392,7 +572,7 @@ header nav li {
   .w-btn:hover {
     background-color: gray; 
     color: white;
-  }
+  } */
 
 
 .footer{
@@ -428,7 +608,7 @@ header nav li {
     font-weight: 500;
 }
 
-.e-btn {
+/* .e-btn {
     background-color: black;
     text-decoration: none;
     color: white;
@@ -438,5 +618,5 @@ header nav li {
     padding: 5px 20px;
     border: 1px solid white;; 
     transition-duration: 0.4s;
-  }
+  } */
 
